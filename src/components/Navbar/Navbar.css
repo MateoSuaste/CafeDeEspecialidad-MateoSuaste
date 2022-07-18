@@ -1,0 +1,41 @@
+html {
+    font-size: 62.5%; }
+  
+
+
+
+
+.nav{
+   width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color:#32594a;
+    
+}
+
+.nav img {
+    width: 17rem;
+    margin-left: 3rem;
+}
+
+.containerBtn{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 15rem;
+}
+
+.nav button{
+    color:#d79f7f;
+    background-color:  #32594a;
+    border-style: none;
+    font-size: large;
+}
+
+.nav button:hover{
+    color: RGB(187, 124, 53);
+    font-size: x-large;
+}
