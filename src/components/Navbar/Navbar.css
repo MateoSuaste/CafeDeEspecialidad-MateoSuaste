@@ -22,7 +22,7 @@ html {
 }
 
 .containerBtn{
-    width: 60%;
+    width: 55%;
     display: flex;
     justify-content: space-around;
     margin-right: 15rem;
@@ -39,3 +39,15 @@ html {
     color: RGB(187, 124, 53);
     font-size: x-large;
 }
+
+
+.containerCart{
+    margin-right: 4rem;
+    display: flex;
+}
+
+.cart{
+    width: 5rem;
+    height: 10rem;
+}
+

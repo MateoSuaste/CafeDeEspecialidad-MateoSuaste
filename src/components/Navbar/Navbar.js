@@ -1,4 +1,5 @@
 import { logDOM } from "@testing-library/react";
+import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -11,7 +12,9 @@ const Navbar = () => {
         <button>Combos</button>
         <button>Promociones</button>
         <button>Productos</button>
+        
       </div>
+      <CartWidget/>
     </nav>
   );
 };
