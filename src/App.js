@@ -14,7 +14,7 @@ function App() {
     else{
       console.log("Stock agotado")
     }
-  }
+  } 
   
 
   return (
