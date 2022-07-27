@@ -16,7 +16,7 @@ const ItemCount = ({ inicial, stock, onAdd }) => {
   };
 
   const handleOnAdd = () => {
-    if (count > stock) {
+    if (count <= stock) {
       onAdd(count);
     } else {
       console.log("Stock agotado");

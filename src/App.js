@@ -3,6 +3,8 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
 import ItemCount from "./components/ItemCount/ItemCount";
+import Fondo from "./components/ImgFondo/ImgFondo";
+import VideoFondo from "./components/VideoFondo/VideoFondo";
 
 function App() {
   const handleOnAdd = (quantity) => {
@@ -12,16 +14,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <video
-          src="imagenNav/cafenav.mp4"
-          autoPlay={true}
-          muted={true}
-          loop={true}
-        ></video>
+        <VideoFondo/>
         <Navbar />
-        <ItemCount stock={10} inicial={1} onAdd={handleOnAdd} />
-        <ItemListContainer greeting="Hola Mundo" />
+       { /*<ItemCount stock={10} inicial={1} onAdd={handleOnAdd} />*/}
       </header>
+      <main>
+      
+      <ItemListContainer greeting="Productos Destacados" />
+      </main>
     </div>
   );
 }
