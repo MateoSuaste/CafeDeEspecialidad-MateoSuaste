@@ -9,7 +9,7 @@ const ItemList = ({products}) => {
         
         <section className="itemList">
             {products.map(product =>(
-                <Item product={product}/>
+                <Item product={product} key={product.id}/>
             ))}
         </section>
     
