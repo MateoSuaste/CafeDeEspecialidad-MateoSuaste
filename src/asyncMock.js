@@ -38,3 +38,11 @@ const products = [
         },3000)
     })
 }
+
+export const getItem = () =>{
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+                resolve(products[1])
+        },3000)
+    })
+}

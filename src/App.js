@@ -5,6 +5,7 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import ItemCount from "./components/ItemCount/ItemCount";
 import Fondo from "./components/ImgFondo/ImgFondo";
 import VideoFondo from "./components/VideoFondo/VideoFondo";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
   const handleOnAdd = (quantity) => {
@@ -21,6 +22,7 @@ function App() {
       <main>
       
       <ItemListContainer greeting="Productos Destacados" />
+      <ItemDetailContainer/>
       </main>
     </div>
   );
