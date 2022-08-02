@@ -39,10 +39,18 @@ const products = [
     })
 }
 
-export const getItem = () =>{
+export const getItemId = (id) =>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
-                resolve(products[1])
-        },3000)
+                resolve(products.find(prod => prod.id === id))
+        },1000)
+    })
+}
+
+export const getItemByOrigin = (origenId) =>{
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+                resolve(products.filter(prod => prod.origin === origenId))
+        },1000)
     })
 }

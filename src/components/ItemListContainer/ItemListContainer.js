@@ -1,23 +1,26 @@
 import { useState, useEffect } from "react";
-import { getProduct } from "../../asyncMock";
+import { getProduct, getItemByOrigin } from "../../asyncMock";
 import ItemList from "../ItemList/ItemList";
 import CargadeItems from "../CargadeItems/CargadeItems";
+import { useParams } from "react-router-dom";
 
 const ItemListContainer = (props)=>{
 
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
-
+    const params = useParams() 
 
         useEffect(()=>{
-            getProduct().then(response =>{
-                setProducts(response)
-            }).catch(error => {
-                console.log(error)
-            }).finally(() =>{
-                setLoading(false)
-            })
-        }, [])
+            if(params.origenId){
+                getItemByOrigin(params.origenId).then(response =>{
+                    setProducts(response)
+                }).catch(error => {
+                    console.log(error)
+                }).finally(() =>{
+                    setLoading(false)
+                })
+            }
+        }, [params.origenId])
 
         //const listProducts = products.map(product => (
         //    <li key={product.id}>{product.name}</li>

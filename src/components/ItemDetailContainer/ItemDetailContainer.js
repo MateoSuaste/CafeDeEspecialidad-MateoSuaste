@@ -1,14 +1,16 @@
 import { useState, useEffect } from "react";
-import { getItem } from "../../asyncMock";
+import { getItemId } from "../../asyncMock";
 import CargadeItems from "../CargadeItems/CargadeItems";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { useParams } from "react-router-dom";
 
 const ItemDetailContainer = () => {
-  const [product, setProduct] = useState([]);
+  const [product, setProduct] = useState();
   const [loading, setLoading] = useState(true);
+  const params = useParams();
 
   useEffect(() => {
-    getItem()
+    getItemId(params.itemId)
       .then((response) => {
         setProduct(response);
       })
@@ -18,7 +20,7 @@ const ItemDetailContainer = () => {
       .finally(() => {
         setLoading(false);
       });
-  }, []);
+  }, [params.itemId]);
 
   if (loading) {
     return (
@@ -30,7 +32,7 @@ const ItemDetailContainer = () => {
 
   return (
     <section>
-      <ItemDetail product={product} key={product.id} />
+      <ItemDetail {...product} key={product.id} />
     </section>
   );
 };
