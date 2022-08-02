@@ -19,6 +19,14 @@ const ItemListContainer = (props)=>{
                 }).finally(() =>{
                     setLoading(false)
                 })
+            }else{
+                getProduct(params.origenId).then(response =>{
+                    setProducts(response)
+                }).catch(error => {
+                    console.log(error)
+                }).finally(() =>{
+                    setLoading(false)
+                })
             }
         }, [params.origenId])
 

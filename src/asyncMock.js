@@ -47,7 +47,7 @@ export const getItemId = (id) =>{
     })
 }
 
-export const getItemByOrigin = (origenId) =>{
+export const getItemByOrigin   = (origenId) =>{
     return new Promise((resolve)=>{
         setTimeout(()=>{
                 resolve(products.filter(prod => prod.origin === origenId))
