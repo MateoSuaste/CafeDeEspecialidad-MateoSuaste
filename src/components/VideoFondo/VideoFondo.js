@@ -3,7 +3,7 @@ import React from "react";
 const VideoFondo = () =>{
     return(
         <video
-          src="imagenNav/cafenav.mp4"
+          src="/imagenNav/cafenav.mp4"
           autoPlay={true}
           muted={true}
           loop={true}

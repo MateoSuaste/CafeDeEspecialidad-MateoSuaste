@@ -23,14 +23,15 @@
     margin-right: 15rem;
 }
 
-.nav button{
+.nav .origenLink{
+    text-decoration: none;
     color:#d79f7f;
     background-color:  #32594a;
     border-style: none;
     font-size: large;
 }
 
-.nav button:hover{
+.nav .origenLink:hover{
     color: RGB(187, 124, 53);
     font-size: x-large;
 }

@@ -1,6 +1,6 @@
 const CargadeItems = ()=>{
     return (
-        <img src="imgProducts/carga.gif" alt="carga de cafe" />
+        <img src="/imgProducts/carga.gif" alt="carga de cafe" />
     )
 }
 

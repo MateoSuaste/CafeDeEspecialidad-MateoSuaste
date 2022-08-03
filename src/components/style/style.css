@@ -87,6 +87,8 @@ body {
 
 .itemDetailDiv1 img {
   width: 25rem;
+  border-style: solid;
+  color: #ffe69b; 
 }
 
 .itemDetailDiv2 h3 {
@@ -104,11 +106,18 @@ body {
 .itemCountContainer {
   display: flex;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .itemCountDiv {
   display: flex;
   justify-content: space-around;
+}
+
+.numberCount{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #043517;
 }
 
 .buttonMenos {
