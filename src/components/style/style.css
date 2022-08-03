@@ -5,11 +5,13 @@ html {
 body {
   overflow-x: hidden;
   background-color: RGB(253, 207, 155);
+  background-image: url(../../../public/imgProducts/cafeFondo.png);
+  background-position: 10px;
 }
 
 .title {
   margin: 5rem 3rem;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #043517;
 }
 
@@ -19,13 +21,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  
 }
 
 .items {
   height: auto;
   width: 19%;
   border: 17px groove #307a79;
-  border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px; background-color: RGB(253, 207, 155);
 }
 
 .items img {
@@ -70,6 +73,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
+  
 }
 
 .itemConteiner__Detail {
@@ -78,6 +82,7 @@ body {
   width: 50%;
   border: 17px groove #307a79;
   border-radius: 10px 10px 10px 10px;
+  background-color: RGB(253, 207, 155);
 }
 
 .itemDetailDiv1 h1 {
