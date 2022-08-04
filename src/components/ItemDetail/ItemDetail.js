@@ -33,7 +33,7 @@ const[quantity, setQuantity] = useState(0);
             <b>Descripcion</b>: {description}
           </p>
           <div className="itemCountDiv">
-           {quantity>0?<Link className="linkCarrito" to="/cart">Ir al Carrito</Link>  :<ItemCount stock={stock} inicial={0} onAdd={handleOnAdd} />}
+           {quantity>0?<Link className="linkCarrito" to="/cart">Terminar Mi Compra</Link>  :<ItemCount stock={stock} inicial={0} onAdd={handleOnAdd} />}
            {quantity>0?<Link className="linkCarrito" to='/'>Seguir Comprando</Link> : <div ></div>}
           </div>
         </div>

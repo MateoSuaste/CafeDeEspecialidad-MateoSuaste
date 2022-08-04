@@ -11,6 +11,8 @@ body {
   background-position: 10px;
 }
 
+/* ESTILO COMPONENTE ITEMLISTCONTEINER*/
+
 .title {
   margin: 5rem 3rem;
   font-size: 3.5rem;
@@ -52,6 +54,8 @@ body {
   border-bottom-right-radius: 7px;
   box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
   background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+  padding: 0 1rem;
+  margin:0 1rem;
 }
 
 .linkItem:hover {
@@ -68,6 +72,9 @@ body {
   font-weight: 700;
   color: #043517;
 }
+
+/*ESTILO COMPONENTE ITEMDETAIL*/
+
 
 .itemDetail {
   margin-top: 10rem;
@@ -178,7 +185,7 @@ body {
   text-decoration: none;
   font-size: 2rem;
   margin: 1rem;
-  padding: 0 .5rem;
+  padding: 0 1rem;
   border-width: 0px;
   color: rgba(255, 255, 255, 1);
   border-color: #0b0e07;
