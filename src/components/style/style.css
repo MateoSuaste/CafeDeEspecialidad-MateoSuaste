@@ -1,3 +1,5 @@
+/*ESTILOS GENERALES*/
+
 html {
   font-size: 62.5%;
 }
@@ -116,7 +118,7 @@ body {
 
 .itemCountDiv {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .numberCount{
@@ -171,3 +173,25 @@ body {
 .buttonAgregar:hover {
   background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
 }
+
+.linkCarrito{
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0 .5rem;
+  border-width: 0px;
+  color: rgba(255, 255, 255, 1);
+  border-color: #0b0e07;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
+  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+}
+
+.linkCarrito:hover{
+  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+}
+
+
