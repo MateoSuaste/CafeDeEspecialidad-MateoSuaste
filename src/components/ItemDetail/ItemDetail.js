@@ -5,21 +5,17 @@ import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
 const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
- 
-const[quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(0);
 
-const{addItem} = useContext(CartContext)
+  const { addItem, getItemQuantity } = useContext(CartContext);
 
- 
+  const quantityPush = getItemQuantity(id);
+
   const handleOnAdd = (quantity) => {
     console.log("Cantidad de items agregados al carrito", quantity);
     setQuantity(quantity);
-    addItem[1]({id, name, price, quantity})
+    addItem({ id, name, price, origin, quantity });
   };
-
-  
-
-
 
   return (
     <article className="itemDetail">
@@ -36,8 +32,24 @@ const{addItem} = useContext(CartContext)
             <b>Descripcion</b>: {description}
           </p>
           <div className="itemCountDiv">
-           {quantity>0?<Link className="linkCarrito" to="/cart">Terminar Mi Compra</Link>  :<ItemCount stock={stock} inicial={0} onAdd={handleOnAdd} />}
-           {quantity>0?<Link className="linkCarrito" to='/'>Seguir Comprando</Link> : <div ></div>}
+            {quantity > 0 ? (
+              <Link className="linkCarrito" to="/cart">
+                Terminar Mi Compra
+              </Link>
+            ) : (
+              <ItemCount
+                stock={stock}
+                initial={quantityPush}
+                onAdd={handleOnAdd}
+              />
+            )}
+            {quantity > 0 ? (
+              <Link className="linkCarrito" to="/">
+                Seguir Comprando
+              </Link>
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>
