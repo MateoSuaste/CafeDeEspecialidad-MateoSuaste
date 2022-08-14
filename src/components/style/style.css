@@ -29,7 +29,7 @@ body {
 }
 
 .items {
-  height: auto;
+  height: 52rem;
   width: 19%;
   border: 17px groove #307a79;
   border-radius: 10px 10px 10px 10px; background-color: RGB(253, 207, 155);
@@ -42,24 +42,30 @@ body {
 
 .linkItem {
   text-decoration: none;
-  font-size: 2rem;
-  width: 20rem;
-  height: 4rem;
-  border-width: 0px;
-  color: rgba(255, 255, 255, 1);
-  border-color: #0b0e07;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
-  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
-  padding: 0 1rem;
-  margin:0 1rem;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .linkItem:hover {
-  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.linkItem:active{
+  transform: translateY(-1px);
 }
 
 .items h3 {
@@ -71,6 +77,7 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
   color: #043517;
+  margin-bottom: 2.5rem;
 }
 
 /*ESTILO COMPONENTE ITEMDETAIL*/
@@ -135,70 +142,234 @@ body {
 }
 
 .buttonMenos {
-  margin-right: 1rem;
-  border-width: 0px;
-  color: rgba(255, 255, 255, 1);
-  border-color: #0b0e07;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
-  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+  padding: 1.3em 1em;
+  margin: 0 1rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
 
 .buttonMenos:hover {
-  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
+
+.buttonMenos:active{
+  transform: translateY(-1px);
+}
+
 .buttonMas {
-  margin-left: 1rem;
-  border-width: 0px;
-  color: rgba(255, 255, 255, 1);
-  border-color: #0b0e07;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
-  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+  padding: 1.3em 1em;
+  margin: 0 1rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
+
 .buttonMas:hover {
-  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
+
+.buttonMas:active{
+  transform: translateY(-1px);
+}
+
 .buttonAgregar {
-  margin-left: 1rem;
-  border-width: 0px;
-  color: rgba(255, 255, 255, 1);
-  border-color: #0b0e07;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
-  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
 }
+
 .buttonAgregar:hover {
-  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
-.linkCarrito{
+.buttonAgregar:active{
+  transform: translateY(-1px);
+}
+
+.linkCarrito {
   text-decoration: none;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin: 1rem ;
+}
+
+.linkCarrito:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.linkCarrito:active{
+  transform: translateY(-1px);
+}
+
+/*Estilos Carrito*/
+
+.cartContainer h1{
   font-size: 2rem;
-  margin: 1rem;
-  padding: 0 1rem;
-  border-width: 0px;
-  color: rgba(255, 255, 255, 1);
-  border-color: #0b0e07;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: inset 0px 16px 16px 0px rgba(118, 194, 27, 1);
-  background: linear-gradient(rgba(63, 99, 22, 1), rgba(98, 134, 55, 1));
+  color: #043517;
 }
 
-.linkCarrito:hover{
-  background: linear-gradient(rgba(98, 134, 55, 1), rgba(63, 99, 22, 1));
+.cartContainer h2{
+  font-size: 1.7rem;
+  color: #043517;
 }
 
+.cartContainer .buttonTerminar{
+  margin-right: 5rem;
+  font-size: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
 
+.cartContainer .buttonTerminar:hover{
+  background-color:  #23c483;;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.cartContainer .buttonTerminar:active{
+  transform: translateY(-1px);
+}
+
+.cartContainer .buttonVaciar{
+  font-size: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.cartContainer .buttonVaciar:hover{
+  background-color:  RGB(255, 51, 0);
+  box-shadow: 0px 15px 20px RGB(255, 51, 1);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.cartContainer .buttonVaciar:active{
+  transform: translateY(-1px);
+}
+
+.cartItem{
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  width: 75%;
+  height: auto;
+  background-color: RGB(253, 207, 155);
+  border: 10px groove #307a79;
+  border-radius: 10px 10px 10px 10px;
+  background-color: RGB(253, 207, 155);
+
+}
+
+.cartItem h2{
+  font-size: 1.7rem;
+  color: #043517;
+}
+
+.cartItem p{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #043517;
+}
+
+.cartItem button{
+  font-size: 1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.cartItem button:hover{
+  background-color: RGB(255, 51, 0);
+  box-shadow: 0px 15px 20px RGB(255, 51, 1);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.cartItem button:active{
+  transform: translateY(-1px);
+}

@@ -6,13 +6,19 @@ import { Link } from "react-router-dom";
 const CartWidget = () =>{
     const {getNumCart} = useContext(CartContext)
     const quantity = getNumCart()
-    return (
-        <Link to='/cart' className="containerCart">
-             <img src = "/imagenNav/cart.svg" alt="CartWidget" className="cart" />
-             <p>{quantity}</p>
-            
-        </Link>
-    );
+
+    if(quantity ===0){
+        return 
+    }else{
+        return (
+            <Link to='/cart' className="containerCart">
+                 <img src = "/imagenNav/cart.svg" alt="CartWidget" className="cart" />
+                 <p>{quantity}</p>
+                
+            </Link>
+        );
+    }
+   
         
     
 }

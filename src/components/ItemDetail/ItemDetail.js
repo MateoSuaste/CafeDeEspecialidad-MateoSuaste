@@ -33,23 +33,19 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
           </p>
           <div className="itemCountDiv">
             {quantity > 0 ? (
-              <Link className="linkCarrito" to="/cart">
-                Terminar Mi Compra
-              </Link>
+              <>
+                <Link className="linkCarrito" to='/cart'>
+                  Terminar Mi Compra
+                </Link>
+                <Link className='linkCarrito' to='/'>
+                  Seguir Comprando
+                </Link>
+              </>
+
             ) : (
-              <ItemCount
-                stock={stock}
-                initial={quantityPush}
-                onAdd={handleOnAdd}
-              />
-            )}
-            {quantity > 0 ? (
-              <Link className="linkCarrito" to="/">
-                Seguir Comprando
-              </Link>
-            ) : (
-              <div></div>
-            )}
+              <ItemCount stock={stock} initial={quantityPush} onAdd={handleOnAdd} />
+            )
+          }
           </div>
         </div>
       </div>

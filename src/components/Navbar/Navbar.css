@@ -40,10 +40,21 @@
 .containerCart{
     margin-right: 4rem;
     display: flex;
+    align-items: center;
+    background-color: #d79f7f;
+    border-radius: 17px 4px 4px 0px;
+    text-decoration: none
+    ;
+}
+
+.containerCart p {
+    margin-right: 1rem;
+    color: #043517;
 }
 
 .cart{
-    width: 5rem;
+    padding-left: -10rem;
+    width: 4rem;
     height: 7rem;
 }
 
