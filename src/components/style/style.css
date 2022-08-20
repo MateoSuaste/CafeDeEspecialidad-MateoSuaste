@@ -71,6 +71,7 @@ body {
 .items h3 {
   font-size: 2rem;
   color: #0d4a49;
+  margin: 1.2rem;
 }
 
 .items p {
@@ -115,6 +116,7 @@ body {
 .itemDetailDiv2 h3 {
   font-size: 1.5rem;
   color: #043517;
+  margin: 1rem;
 }
 
 .descripcion {
@@ -126,6 +128,7 @@ body {
 
 .itemCountContainer {
   display: flex;
+  align-items: baseline;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -256,13 +259,17 @@ body {
 /*Estilos Carrito*/
 
 .cartContainer h1{
-  font-size: 2rem;
-  color: #043517;
+  font-size: 2.5rem;
+    color: #043517;
+    font-weight: revert;
+    margin-top: 1rem;
 }
 
 .cartContainer h2{
   font-size: 1.7rem;
   color: #043517;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
 }
 
 .cartContainer .buttonTerminar{
@@ -326,7 +333,7 @@ body {
   flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
   width: 75%;
   height: auto;
   background-color: RGB(253, 207, 155);
@@ -350,6 +357,7 @@ body {
 .cartItem button{
   font-size: 1rem;
   padding: 1rem;
+  margin: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
@@ -373,3 +381,13 @@ body {
 .cartItem button:active{
   transform: translateY(-1px);
 }
+
+/*COMIENZO DE FORM CART*/
+input[type=number]:-webkit-inner-spin-button
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+  

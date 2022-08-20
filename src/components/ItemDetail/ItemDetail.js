@@ -3,13 +3,20 @@ import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
+import { FormCart } from "../FormCart/FormCart";
 
-const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
+
+const ItemDetail = ({ id, img, name, origin, stock, description, price}) => {
   const [quantity, setQuantity] = useState(0);
-
   const { addItem, getItemQuantity } = useContext(CartContext);
-
   const quantityPush = getItemQuantity(id);
+
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  
 
   const handleOnAdd = (quantity) => {
     console.log("Cantidad de items agregados al carrito", quantity);
@@ -18,6 +25,7 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
   };
 
   return (
+    <>
     <article className="itemDetail">
       <div className="itemConteiner__Detail">
         <div className="itemDetailDiv1">
@@ -34,12 +42,10 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
           <div className="itemCountDiv">
             {quantity > 0 ? (
               <>
-                <Link className="linkCarrito" to='/cart'>
-                  Terminar Mi Compra
-                </Link>
+                 <button onClick={handleShow} className="linkCarrito" variant="primary">Terminar con la compra</button>
                 <Link className='linkCarrito' to='/'>
                   Seguir Comprando
-                </Link>
+                </Link> 
               </>
 
             ) : (
@@ -50,6 +56,8 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price }) => {
         </div>
       </div>
     </article>
+    <FormCart show={show} handleClose={handleClose}/>
+    </>
   );
 };
 

@@ -7,11 +7,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import  CartContextProvider  from "./context/CartContext";
 import Cart from "./components/Cart/Cart";
 
+
 function App() {
   return (
     <div className="App">
       <CartContextProvider>
-        <BrowserRouter>
+        <BrowserRouter> 
           <header className="App-header">
             <VideoFondo />
             <Navbar />
