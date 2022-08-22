@@ -15,7 +15,7 @@ import {
 } from "firebase/firestore";
 import { ref } from "../../services/firebase/index";
 
-const Cart = (name, apellido, email) => {
+const Cart = () => {
   const { cart, clearItems, getPriceTotal } = useContext(CartContext);
 
   const total = getPriceTotal();
@@ -24,9 +24,9 @@ const Cart = (name, apellido, email) => {
     try {
       const setOrder = {
         buyer: {
-          name,
-          apellido,
-          email,
+          name:"nnn",
+          apellido:"nnn",
+          email:"dd",
         },
         items: cart,
         total,
@@ -57,6 +57,7 @@ const Cart = (name, apellido, email) => {
         const order = collection(ref, "orders");
         const orderPush = await addDoc(order, setOrder);
         bach.commit();
+        console.log(orderPush.id)
         clearItems()
       } else {
         clearItems();
@@ -81,7 +82,7 @@ const Cart = (name, apellido, email) => {
         Vaciar Carrito
       </button>
     </div>
-    <FormCart name={name} apellido={apellido} email={email}/>
+    <FormCart/>
     </>
   );
   
