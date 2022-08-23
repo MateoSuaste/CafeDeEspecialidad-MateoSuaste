@@ -20,6 +20,8 @@ const Cart = () => {
 
   const total = getPriceTotal();
 
+
+
   const getOrder = async () => {
     try {
       const setOrder = {
@@ -82,7 +84,7 @@ const Cart = () => {
         Vaciar Carrito
       </button>
     </div>
-    <FormCart/>
+    <FormCart />
     </>
   );
   
