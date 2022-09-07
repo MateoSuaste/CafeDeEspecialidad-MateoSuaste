@@ -1,4 +1,4 @@
-import "../style/style.css";
+import "../ItemDetail/ItemDetail.css";
 import ItemCount from "../ItemCount/ItemCount";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
@@ -30,8 +30,16 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price}) => {
           <img src={img} alt={name} />
         </div>
         <div className="itemDetailDiv2">
-          <h3>Origen: {origin}</h3>
-          <h3>Stock: {stock}</h3>
+          {stock>0 ?(
+            <>
+             <h3>Stock: {stock}</h3>
+            </>
+          ):(
+            <>
+            <h3 className="sinStock">Sin Stock</h3>
+            </>
+          )}
+         
           <h3>Precio: ${price}</h3>
           <p className="descripcion">
             <b>Descripcion</b>: {description}
@@ -46,7 +54,15 @@ const ItemDetail = ({ id, img, name, origin, stock, description, price}) => {
               </>
 
             ) : (
-              <ItemCount stock={stock} initial={quantityPush} onAdd={handleOnAdd} />
+              <>
+              {stock>0 ?(
+                <ItemCount stock={stock} initial={quantityPush} onAdd={handleOnAdd} />
+              ):(
+                <></>
+              )}
+             
+              </>
+              
             )
           }
           </div>

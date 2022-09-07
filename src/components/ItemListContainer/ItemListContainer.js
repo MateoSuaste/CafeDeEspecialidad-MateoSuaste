@@ -11,11 +11,11 @@ const ItemListContainer = (props) => {
   const params = useParams();
 
   useEffect(() => {
-    const collectionById = !params.origenId
+    const collectionById = !params.categoryId
       ? collection(ref, "products")
       : query(
           collection(ref, "products"),
-          where("origin", "==", params.origenId)
+          where("category", "==", params.categoryId)
         );
 
         
@@ -34,7 +34,8 @@ const ItemListContainer = (props) => {
         setLoading(false);
       });
 
-  }, [params.origenId]);
+  }, [params.categoryId]);
+  
 
   if (loading) {
     return (

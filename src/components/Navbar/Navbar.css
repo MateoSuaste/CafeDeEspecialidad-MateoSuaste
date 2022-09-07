@@ -39,6 +39,7 @@
 
 .containerCart{
     margin-right: 4rem;
+    width: 15rem;
     display: flex;
     align-items: center;
     background-color: #d79f7f;

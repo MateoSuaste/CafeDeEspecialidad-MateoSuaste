@@ -25,9 +25,9 @@ function App() {
                 element={<ItemListContainer greeting="Productos Destacados" />}
               />
               <Route
-                path="/origen/:origenId"
+                path="/category/:categoryId"
                 element={
-                  <ItemListContainer greeting="Producto Segun su Origen" />
+                  <ItemListContainer greeting="Productos" />
                 }
               />
               <Route

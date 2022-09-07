@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../style/style.css";
 
-const ItemCount = ({stock = 0, initial = 1, onAdd})=> {
+const ItemCount = ({stock = 0, initial=1, onAdd})=> {
   const [count, setcount] = useState(initial)
 
   const sumar = () => {

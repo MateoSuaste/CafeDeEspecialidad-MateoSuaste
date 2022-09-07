@@ -1,0 +1,69 @@
+.cartContainer h1 {
+    font-size: 2.5rem;
+    color: #043517;
+    font-weight: revert;
+    margin-top: 1rem;
+  }
+  
+  .cartContainer h2 {
+    font-size: 1.7rem;
+    color: #043517;
+    margin-bottom: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .cartContainer .buttonTerminar {
+    text-decoration: none;
+    margin-right: 5rem;
+    font-size: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .cartContainer .buttonTerminar:hover {
+    transform: translateY(-7px);
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+  }
+  
+  .cartContainer .buttonTerminar:active {
+    transform: translateY(-1px);
+  }
+  
+  .cartContainer .buttonVaciar {
+    font-size: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .cartContainer .buttonVaciar:hover {
+    background-color: RGB(255, 51, 0);
+    box-shadow: 0px 15px 20px RGB(255, 51, 1);
+    color: #fff;
+  }
+  
+  .cartContainer .buttonVaciar:active {
+    transform: translateY(-1px);
+  }
+  

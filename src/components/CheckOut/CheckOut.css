@@ -1,0 +1,104 @@
+.containerForm {
+    border: 17px groove #307a79;
+    border-radius: 10px 10px 10px 10px;
+    background-color: RGB(253, 207, 155);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color:#32594a;
+    margin: 0 auto;
+    width: 30%;
+    height: 30%;
+    
+  }
+  
+  .containerForm form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+  }
+  
+  .containerForm  label{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color:#d79f7f;
+    margin: 2rem 0 .2rem 0;
+  }
+  
+  .containerForm input{
+    height: 3rem;
+  }
+  
+  .containerForm p {
+    font-size: 1.5rem;
+    color: red;
+    font-weight: 700;
+  }
+  
+  .containerForm button{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(82, 10, 10, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  
+  .titleCheckOut{
+    color: #043517;
+    font-size: 2.5rem;
+  }
+  
+  
+  .containerOrder{
+    margin: 3rem auto;
+    background-color:#32594a;
+    width: 40%;
+  }
+  .order{
+    font-size: 2rem;
+    font-weight: 700;
+    color:#d79f7f;
+    padding: 2rem 0;
+  }
+  
+  
+  .linkCheckOut {
+    text-decoration: none;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    margin: 1rem;
+  }
+  
+  .linkCheckOut:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .linkCheckOutx:active {
+    transform: translateY(-1px);
+  }
+  

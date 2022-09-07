@@ -3,6 +3,7 @@ import CartWidget from "../CartWidget/CartWidget";
 import "./Navbar.css";
 import {Link} from "react-router-dom";
 
+
 const Navbar = () => {
   return (
     <>
@@ -12,10 +13,9 @@ const Navbar = () => {
       </div>
       <div className="containerBtn">
         <Link to= '/' className="origenLink" >Inicio</Link>
-        <Link to='/origen/Colombia'className="origenLink">De Colombia</Link>
-        <Link to='/origen/Guatemala'className="origenLink">De Guatemala</Link>
-        <Link to='/origen/Etiopia'className="origenLink">De Etiopia</Link>
-       
+        <Link to='/category/Cafe de Especialidad'className="origenLink">Cafe de Especialidad</Link>
+        <Link to='/category/Maquinas de Espresso'className="origenLink">Maquinas de Espresso</Link>
+        <Link to='/category/Accesorios'className="origenLink">Accesorios</Link>
       </div>
       <CartWidget/>
     </nav>

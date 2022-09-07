@@ -1,6 +1,5 @@
 import Item from "../Item/Item";
-import "../style/style.css"
-import Fondo from "../ImgFondo/ImgFondo";
+import "../ItemList/ItemList.css"
 
 
 const ItemList = ({products}) => {
