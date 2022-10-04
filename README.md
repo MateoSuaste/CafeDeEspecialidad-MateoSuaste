@@ -10,7 +10,7 @@ El proyecto cuenta con las librerias de:
 -React-router-dom.
 
 Detalles de navegacion...
-Al estar en la url "/" estaras en el componente de ItemListConteiner. Al estar en la url "/item/:itemId" estaras en el componente ItemDetailConteiner y cuando estas en la url "/origen/:origenId"  estaras en el componente ItemListContainer pero filtrando los productos segun su origen.
+Al estar en la url "/" estaras en el componente de ItemListConteiner. Al estar en la url "/item/:itemId" estaras en el componente ItemDetailConteiner y cuando estas en la url "/category/:categoryId"  estaras en el componente ItemListContainer pero filtrando los productos segun su categoria. Al agregar el producto al carrito podras seguir navegando o podras finalizar la compra. En la url "/checkout" estara el formulario para ingresar datos, una vez verificados se le enviara la orden de compra.
 
 Descripcion General...
-El proyecto se basa en la compra y venta de granos de cafe, en la que en el futuro se va a poder agregar al carrito de compras y tambien poder elegir si el cafe quiere que se envie molido segun la cafetera que tenga o en granos.
+El proyecto se basa en la compra y venta de accesorios, granos de cafe y maquinas espresso. Donde podras agregar productos al carrito, y gestionar la orden de compra
