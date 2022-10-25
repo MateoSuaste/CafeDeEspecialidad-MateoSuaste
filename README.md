@@ -1,4 +1,4 @@
-Proyecto ECOMMERCE.
+Proyecto ECOMMERCE (producido con React).
 Para empezar...
 1-Clonar el repositorio.
 2-Abrir la consola, y escribir el comando npm install.
